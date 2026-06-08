@@ -10,20 +10,22 @@
 
 This is a color conversion workflow for [Alfred](https://www.alfredapp.com/). It converts between hex, RGB, HSL, NSColor, UIColor, Swift Color, and 148 CSS named colors — all from the Alfred launcher.
 
+> 📖 [中文版 (Chinese README)](./README_CN.md)
+
 The original workflow, created by **Tyler Eich** in 2013 (before the Apple Silicon era), contained x86_64-only binaries that produce `Bad CPU type in executable` on modern Macs with Apple M-series processors. This fork rebuilds the binaries as **universal (x86_64 + arm64)**, fixes several bugs uncovered during modern compilation, and makes the project buildable from source.
 
 ## Keywords
 
-| Keyword   | Input format       | Example                                          |
-|-----------|--------------------|--------------------------------------------------|
-| `#`       | Hex color          | `#ff0000`                                        |
-| `rgb`     | CSS RGB            | `rgb(255, 0, 0)`                                 |
-| `hsl`     | CSS HSL            | `hsl(180, 100%, 50%)`                             |
-| `c`       | CSS named color    | `c red`                                          |
-| `[ns`     | NSColor (ObjC)     | `[ns colorWithRed:1 green:0 blue:0 alpha:1]`     |
-| `[ui`     | UIColor (ObjC)     | `[ui colorWithRed:1 green:0 blue:0 alpha:1]`     |
-| `NSColor` | NSColor (Swift)    | `NSColor(calibratedRed:1, green:0, blue:0, alpha:1)` |
-| `UIColor` | UIColor (Swift)    | `UIColor(red:1, green:0, blue:0, alpha:1)`       |
+| Keyword | Input format        | Example                                          |
+|---------|---------------------|--------------------------------------------------|
+| `c`     | CSS named color     | `c red`                                          |
+| `#`     | Hex color           | `#ff0000`                                        |
+| `rgb`   | CSS RGB             | `rgb(255, 0, 0)`                                 |
+| `hsl`   | CSS HSL             | `hsl(180, 100%, 50%)`                             |
+| `[ns`   | NSColor (ObjC)      | `[ns colorWithRed:1 green:0 blue:0 alpha:1]`     |
+| `[ui`   | UIColor (ObjC)      | `[ui colorWithRed:1 green:0 blue:0 alpha:1]`     |
+
+> **Note:** Swift syntax (`NSColor(…)` / `UIColor(…)`) is supported as typed input after the `[ns` / `[ui` keyword is active — they share the same Script Filter trigger and parser.
 
 ### Output formats
 

@@ -10,20 +10,22 @@
 
 这是一个面向开发者的 [Alfred](https://www.alfredapp.com/) 颜色转换工作流。支持 hex、RGB、HSL、NSColor、UIColor、Swift Color 及 148 种 CSS 命名颜色之间的相互转换，全部在 Alfred 内完成。
 
+> 📖 [English Version (英文版)](./README.md)
+
 原始工作流由 **Tyler Eich** 于 2013 年创建（当时 Apple Silicon 尚未诞生），其中的二进制文件仅支持 x86_64 架构，在 Apple M 系列芯片的 Mac 上会出现 `Bad CPU type in executable` 错误。本项目将二进制文件重新编译为 **universal（x86_64 + arm64）** 格式，修复了在现代编译过程中发现的若干 bug，并使项目可从源码构建。
 
 ## 关键词
 
-| 关键词    | 输入格式               | 示例                                              |
-|-----------|------------------------|---------------------------------------------------|
-| `#`       | 十六进制颜色            | `#ff0000`                                         |
-| `rgb`     | CSS RGB               | `rgb(255, 0, 0)`                                  |
-| `hsl`     | CSS HSL               | `hsl(180, 100%, 50%)`                              |
-| `c`       | CSS 命名颜色            | `c red`                                           |
-| `[ns`     | NSColor（Objective-C） | `[ns colorWithRed:1 green:0 blue:0 alpha:1]`      |
-| `[ui`     | UIColor（Objective-C） | `[ui colorWithRed:1 green:0 blue:0 alpha:1]`      |
-| `NSColor` | NSColor（Swift）       | `NSColor(calibratedRed:1, green:0, blue:0, alpha:1)` |
-| `UIColor` | UIColor（Swift）       | `UIColor(red:1, green:0, blue:0, alpha:1)`        |
+| 关键词 | 输入格式                | 示例                                              |
+|--------|-------------------------|---------------------------------------------------|
+| `c`    | CSS 命名颜色             | `c red`                                           |
+| `#`    | 十六进制颜色             | `#ff0000`                                         |
+| `rgb`  | CSS RGB                | `rgb(255, 0, 0)`                                  |
+| `hsl`  | CSS HSL                | `hsl(180, 100%, 50%)`                              |
+| `[ns`  | NSColor（Objective-C）  | `[ns colorWithRed:1 green:0 blue:0 alpha:1]`      |
+| `[ui`  | UIColor（Objective-C）  | `[ui colorWithRed:1 green:0 blue:0 alpha:1]`      |
+
+> **注意：** Swift 语法（`NSColor(…)` / `UIColor(…)`）在 `[ns` / `[ui` 关键词激活后作为输入生效——它们共用同一个 Script Filter 触发器和解析器。
 
 ### 输出格式
 
