@@ -38,6 +38,40 @@ CSS Hex、CSS RGBA、CSS RGB%、CSS HSLA、CSS 命名颜色、32-Bit Hex、NSCol
 | ⌥ Option  | 切换 alpha 通道后复制      |
 | ⌘ Command | 在 macOS 颜色面板中打开     |
 
+## 截图
+
+### 工作流总览
+
+![Colors 工作流](screenshots/colors-workflow.png)
+
+### 关键词：`#`（十六进制颜色）
+
+![十六进制颜色](screenshots/keyword-#.png)
+
+### 关键词：`c`（CSS 命名颜色）
+
+![CSS 命名颜色](screenshots/keyword-c.png)
+
+### 关键词：`rgb`（CSS RGB）
+
+![CSS RGB](screenshots/keyword-rgb.png)
+
+### 关键词：`hsl`（CSS HSL）
+
+![CSS HSL](screenshots/keyword-hsl.png)
+
+### 关键词：`[ns`（NSColor）
+
+| ObjC 语法 | Swift 语法 |
+|-----------|------------|
+| ![NSColor ObjC](screenshots/keyword-%5Bns.png) | ![NSColor Swift](screenshots/keyword-%5Bnscolor.png) |
+
+### 关键词：`[ui`（UIColor）
+
+| ObjC 语法 | Swift 语法 |
+|-----------|------------|
+| ![UIColor ObjC](screenshots/keyword-%5Bui.png) | ![UIColor Swift](screenshots/keyword-%5Buicolor.png) |
+
 ## 相对原始版本的修改
 
 原始工作流（v2.0.0）于 2013 年构建，仅支持 Intel Mac。本版本：

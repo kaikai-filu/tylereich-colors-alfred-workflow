@@ -38,6 +38,40 @@ CSS Hex, CSS RGBA, CSS RGB%, CSS HSLA, CSS Named, 32-Bit Hex, NSColor (calibrate
 | ⌥ Option | Toggle alpha channel, then copy |
 | ⌘ Command | Reveal in macOS color panel    |
 
+## Screenshots
+
+### Workflow overview
+
+![Colors workflow](screenshots/colors-workflow.png)
+
+### Keyword: `#` (Hex color)
+
+![Hex color](screenshots/keyword-#.png)
+
+### Keyword: `c` (CSS named color)
+
+![CSS named color](screenshots/keyword-c.png)
+
+### Keyword: `rgb` (CSS RGB)
+
+![CSS RGB](screenshots/keyword-rgb.png)
+
+### Keyword: `hsl` (CSS HSL)
+
+![CSS HSL](screenshots/keyword-hsl.png)
+
+### Keyword: `[ns` (NSColor)
+
+| ObjC syntax | Swift syntax |
+|-------------|--------------|
+| ![NSColor ObjC](screenshots/keyword-%5Bns.png) | ![NSColor Swift](screenshots/keyword-%5Bnscolor.png) |
+
+### Keyword: `[ui` (UIColor)
+
+| ObjC syntax | Swift syntax |
+|-------------|--------------|
+| ![UIColor ObjC](screenshots/keyword-%5Bui.png) | ![UIColor Swift](screenshots/keyword-%5Buicolor.png) |
+
 ## Changes from the original
 
 The original workflow (v2.0.0) was built in 2013 for Intel Macs only. This version:
