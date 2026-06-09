@@ -8,7 +8,7 @@
 
 ## About
 
-This is a color conversion workflow for [Alfred](https://www.alfredapp.com/). It converts between hex, RGB, HSL, NSColor, UIColor, Swift Color, and 148 CSS named colors — all from the Alfred launcher.
+This is a color conversion workflow for [Alfred](https://www.alfredapp.com/). It converts between hex, RGB, HSL, NSColor, UIColor, Swift Color, and [148 CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/named-color) — all from the Alfred launcher.
 
 > 📖 [中文版 (Chinese README)](./README_CN.md)
 

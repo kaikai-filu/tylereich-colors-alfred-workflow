@@ -8,7 +8,7 @@
 
 ## 简介
 
-这是一个面向开发者的 [Alfred](https://www.alfredapp.com/) 颜色转换工作流。支持 hex、RGB、HSL、NSColor、UIColor、Swift Color 及 148 种 CSS 命名颜色之间的相互转换，全部在 Alfred 内完成。
+这是一个面向开发者的 [Alfred](https://www.alfredapp.com/) 颜色转换工作流。支持 hex、RGB、HSL、NSColor、UIColor、Swift Color 及 [148 种 CSS 命名颜色](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference/Values/named-color)之间的相互转换，全部在 Alfred 内完成。
 
 > 📖 [English Version (英文版)](./README.md)
 
